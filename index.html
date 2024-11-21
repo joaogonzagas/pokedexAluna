@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="game.png">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <script defer src="./js/script.js"></script>
+    
+    <script src="js/index.js" defer></script>
+
+</head>
+
+<body>
+    <title>Pokedex</title>
+
+
+    <main>
+        <div class="container" id="container">
+            <div class="cover" id="cover">
+                <h1><span class="pokemon_name"></span></h1>
+                <figure class="front">
+                <figure class="back">
+                    <h1 class="pokemon_data"></h1>
+                    <div class="tilt-container"></div>
+        </figure>
+    </div>
+
+
+    <form class="form">
+        <input
+            type="search"
+            class="input_search"
+            placeholder="Name or Number"
+            required>
+        </form>
+        
+            <img src="#" alt="pokemon" class="pokemon_image">
+            <h1><span class="pokemon_number"></span> </h1>
+         
+            <div class="buttons">
+                <button class="button btn-prev"> ← </button>
+                <button class="button btn-next"> → </button>
+            </div>
+
+            <button id="audioButton" class="audio-button"></button>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/clicker.js" defer></script>
+    <script src="./js/audio.js" defer></script>
+    <audio id="clickSound" src="./botão.mp3" preload="auto"></audio>
+    <audio id="audioPlayer" src="./Ost.mp3"></audio>
+    
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".container , .cover"), {
+		max: 5,
+		speed: 4
+	});
+    
+    </script>
+    
+  
+</body>
+</html>
